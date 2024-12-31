@@ -23,7 +23,6 @@ PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 PACKAGES="$PACKAGES luci-app-frpc"
-PACKAGES="$PACKAGES luci-app-turboacc"
 PACKAGES="$PACKAGES luci-app-wireguard"
 
 # 构建镜像
