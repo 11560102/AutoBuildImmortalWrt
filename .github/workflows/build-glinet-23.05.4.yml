@@ -58,7 +58,7 @@ jobs:
               exit 1
             fi
           fi
-      
+
 
       - name: Build Gl-iNet ImmortalWrt 23.05.4
         run: |

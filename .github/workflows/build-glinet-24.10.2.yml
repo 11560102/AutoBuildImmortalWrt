@@ -1,4 +1,4 @@
-name: build-gl-inet-24.10.1
+name: build-gl-inet-24.10.2
 on:
   workflow_dispatch:
     inputs:
@@ -56,19 +56,18 @@ jobs:
               echo "Error: PPPoE account and password must be provided when PPPoE is enabled!"
               exit 1
             fi
-          fi
-      
+          fi    
 
-      - name: Build Gl-iNet ImmortalWrt 24.10.1
+      - name: Build Gl-iNet ImmortalWrt 24.10.2
         run: |
           profiles="${{ github.event.inputs.profile }}"
           include_docker="${{ github.event.inputs.include_docker }}"
     
           if [ "$profiles" = "glinet_gl-b2200" ]; then
-            tag=ipq40xx-generic-openwrt-24.10.1
+            tag=ipq40xx-generic-openwrt-24.10.2
             echo "platform=ipq40xx/generic" >> $GITHUB_ENV
           else
-            tag=mediatek-filogic-openwrt-24.10.1
+            tag=mediatek-filogic-openwrt-24.10.2
             echo "platform=mediatek/filogic" >> $GITHUB_ENV
           fi
           

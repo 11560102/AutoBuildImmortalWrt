@@ -43,7 +43,7 @@ jobs:
       - name: Set executable permissions
         run: |
           chmod +x ${{ github.workspace }}/sunxi-cortexa53/build.sh
-
+      
       - name: Build sunxi-cortexa53 ImmpotalWrt 23.05.4
         run: |
           profiles="${{ github.event.inputs.profile }}"
@@ -59,6 +59,7 @@ jobs:
               --user root \
               -v "${{ github.workspace }}/bin:/home/build/immortalwrt/bin" \
               -v "${{ github.workspace }}/files:/home/build/immortalwrt/files" \
+              -v "${{ github.workspace }}/shell:/home/build/immortalwrt/shell" \
               -v "${{ github.workspace }}/sunxi-cortexa53/build.sh:/home/build/immortalwrt/build.sh" \
               -e PROFILE=$profile \
               -e INCLUDE_DOCKER=$include_docker \
