@@ -52,8 +52,6 @@ PACKAGES="$PACKAGES luci-theme-argon"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 #24.10
-PACKAGES="$BASE_PACKAGES luci-app-ipsec-server"
-PACKAGES="$BASE_PACKAGES luci-app-ipsec-vpnd"
 #PACKAGES="$BASE_PACKAGES luci-proto-wireguard"
 PACKAGES="$BASE_PACKAGES luci-app-frpc"
 PACKAGES="$BASE_PACKAGES luci-app-npc"
